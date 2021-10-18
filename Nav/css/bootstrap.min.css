@@ -4868,7 +4868,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/* 
 .card {
   position: relative;
   display: -webkit-box;
@@ -4884,8 +4884,8 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-}
-
+} */
+/* 
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -5134,7 +5134,7 @@ input[type="button"].btn-block {
 
 .accordion > .card .card-header {
   margin-bottom: -1px;
-}
+} */
 
 .breadcrumb {
   display: -webkit-box;

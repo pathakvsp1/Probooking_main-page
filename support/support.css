@@ -1,0 +1,126 @@
+.heading_faq {
+    width: 50% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    font-size: 16px !important;
+}
+.accordion {
+    display: flex !important;
+    flex-direction: column !important;
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;*/
+    max-width: 991px !important;
+    min-width: 320px !important;
+    margin: 50px auto !important;
+  }
+  
+  .accordion-item {
+    margin-top: 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+    transition: 1s all !important;
+  }
+  .accordion-item:hover {
+    margin-top: 10px !important;
+    background:   #ebf5fb   !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6px !important;
+    
+  }
+  .accordion-item .accordion-item-title {
+    position: relative !important;
+    margin: 0 !important;
+    display: flex !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    cursor: pointer !important;
+    justify-content: space-between !important;
+    flex-direction: row-reverse !important;
+    padding: 14px 20px !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+  }
+  .accordion-item .accordion-item-desc {
+    display: none !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    color: #333 !important;
+    border-top: 1px dashed #ddd !important;
+    padding: 10px 20px 20px !important;
+    box-sizing: border-box !important;
+    transition: 1s all !important;
+  }
+ 
+  .accordion-item input[type=checkbox] {
+    position: absolute !important;
+    height: 0 !important;
+    animation-duration: 2s !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    transition: 1a all !important;
+  }
+  .accordion-item input[type=checkbox]:checked ~ .accordion-item-desc {
+    transition-delay: 1s !important;
+    display: block !important;
+  }
+  .accordion-item input[type=checkbox]:checked ~ .accordion-item-title {
+    font-weight: bold !important;
+  }
+  .accordion-item input[type=checkbox]:checked ~ .accordion-item-title .icon:after {
+    content: "-" !important;
+  }
+  .accordion-item input[type=checkbox] ~ .accordion-item-title .icon:after {
+    content: "+" !important;
+    /*background:  #d6eaf8  !important;*/
+    color: black !important;
+    border-radius: 50% !important;
+    padding: 10px 10px !important;
+  }
+  .accordion-item:first-child {
+    margin-top: 0 !important;
+  }
+  .accordion-item .icon {
+    margin-left: 14px !important;
+    font-weight: normal !important;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius:5px;
+  }
+  
+
+  /* Style the container/contact section */
+  .container-support {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 991px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

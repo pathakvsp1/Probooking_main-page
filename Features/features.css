@@ -1,0 +1,13 @@
+.sign-up{
+    color:  #E4625D;
+    
+    
+}
+.sign-up:hover{
+    background-color: #E4625D;
+    color: white !important;
+    border: 1px solid black !important;
+}
+.alternate{
+    background: #f6f6f6;
+}
